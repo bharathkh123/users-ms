@@ -56,7 +56,7 @@ public class UserService {
         }
 
         DepartmentDetailsDTO departmentDetailsDTO =
-                restTemplate.getForObject("http://localhost:9001/departments/"+userDetailsDTO.getDepartmentId(), DepartmentDetailsDTO.class);
+                restTemplate.getForObject("http://DEPARTMENT-SERVICE:9001/departments/"+userDetailsDTO.getDepartmentId(), DepartmentDetailsDTO.class);
 
         responseVo.setDepartmentDetailsDTO(departmentDetailsDTO);
         return responseVo;
