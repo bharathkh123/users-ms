@@ -1,0 +1,9 @@
+server:
+  port: 9002
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:ORCL
+    username: bkh
+    password: bkh
+    driver-class-name: oracle.jdbc.OracleDriver
